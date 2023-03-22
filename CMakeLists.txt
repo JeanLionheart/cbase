@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.15)
+project(mlib)
+include_directories(includes includes includes includes includes includes includes includes includes )
+set(SOURCES main.c srcs/array.c srcs/list.c srcs/mem.c srcs/regex.c srcs/syncq.c srcs/tree.c )
+add_executable(mlib ${SOURCES})
+add_definitions(" -Werror ")
+add_definitions("-Wall -g -Werror")

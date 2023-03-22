@@ -1,0 +1,27 @@
+[
+    {
+        "directory": "/home/jean/mycode/mlib/base/srcs",
+        "command": "/usr/bin/c++  -I/home/jean/mycode/mlib/base/includes",
+        "file": "/home/jean/mycode/mlib/base/srcs/array.c"
+    },
+    {
+        "directory": "/home/jean/mycode/mlib/base/srcs",
+        "command": "/usr/bin/c++  -I/home/jean/mycode/mlib/base/includes",
+        "file": "/home/jean/mycode/mlib/base/srcs/list.c"
+    },
+    {
+        "directory": "/home/jean/mycode/mlib/base/srcs",
+        "command": "/usr/bin/c++  -I/home/jean/mycode/mlib/base/includes",
+        "file": "/home/jean/mycode/mlib/base/srcs/syncq.c"
+    },
+    {
+        "directory": "/home/jean/mycode/mlib/base/srcs",
+        "command": "/usr/bin/c++  -I/home/jean/mycode/mlib/base/includes",
+        "file": "/home/jean/mycode/mlib/base/srcs/tree.c"
+    },
+    {
+        "directory": "/home/jean/mycode/mlib/base/srcs",
+        "command": "/usr/bin/c++  -I/home/jean/mycode/mlib/base/includes",
+        "file": "/home/jean/mycode/mlib/base/srcs/regex.c"
+    }
+]
