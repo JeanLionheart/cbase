@@ -39,7 +39,7 @@ void tree_erase(tree_t* tree, long key);
 
 int tree_empty(const tree_t* tree);
 
-void tree_deconstruct(tree_t* tree);
+void tree_destruct(tree_t* tree);
 
 /*
 private struct and func
@@ -410,7 +410,7 @@ int tree_size(const tree_t* tree)
     return tree->size;
 }
 
-void tree_deconstruct(tree_t* tree)
+void tree_destruct(tree_t* tree)
 {
     /* TODO */
 }

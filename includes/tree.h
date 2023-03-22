@@ -30,7 +30,7 @@ void tree_erase(tree_t *tree, long key);
 
 int tree_empty(const tree_t *tree);
 
-void tree_deconstruct(tree_t *tree);
+void tree_destruct(tree_t *tree);
 #ifdef debugging
 void tree_debug(tree_t*tree);
 #endif

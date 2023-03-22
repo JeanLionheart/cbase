@@ -18,7 +18,7 @@ void *array_data(const array_t *arr);
 
 void array_clean(array_t *arr);
 
-void array_deconstruct(array_t *arr);
+void array_destruct(array_t *arr);
 
 /* private part */
 void array_expand(array_t *arr, int cap);
@@ -79,7 +79,7 @@ void array_clean(array_t *arr)
     return;
 }
 
-void array_deconstruct(array_t *arr)
+void array_destruct(array_t *arr)
 {
     free(arr->data);
 }

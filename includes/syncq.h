@@ -22,6 +22,6 @@ void sync_que_pop(sync_que_t *sq, void *dst);
 
 int sync_que_try_pop(sync_que_t *sq, void *dst);
 
-void sync_que_deconstruct(sync_que_t *sq);
+void sync_que_destruct(sync_que_t *sq);
 
 #endif

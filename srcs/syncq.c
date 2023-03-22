@@ -7,7 +7,7 @@ void sync_que_push(sync_que_t *sq, const void *src);
 
 void sync_que_pop(sync_que_t *sq, void *dst);
 
-void sync_que_deconstruct(sync_que_t *sq);
+void sync_que_destruct(sync_que_t *sq);
 
 void sync_que_init(sync_que_t *sq, int element_size)
 {
@@ -58,9 +58,9 @@ int sync_que_try_pop(sync_que_t *sq, void *dst)
     return 1;
 }
 
-void sync_que_deconstruct(sync_que_t *sq)
+void sync_que_destruct(sync_que_t *sq)
 {
     pthread_mutex_destroy(&sq->lock);
     pthread_cond_destroy(&sq->condv);
-    list_deconstruct(&sq->list);
+    list_destruct(&sq->list);
 }

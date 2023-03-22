@@ -30,6 +30,6 @@ void *array_data(const array_t *arr);
 
 void array_clean(array_t *arr);
 
-void array_deconstruct(array_t *arr);
+void array_destruct(array_t *arr);
 
 #endif

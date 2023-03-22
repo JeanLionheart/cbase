@@ -54,7 +54,7 @@ void array_test()
         int* data = (int*)arr.data;
         assert(data[i] == i);
     }
-    array_deconstruct(&arr);
+    array_destruct(&arr);
 }
 
 int test_arr[0xffffff];
@@ -100,7 +100,7 @@ void syncq_test()
         pthread_join(pthrd[i], 0);
     }
 
-    sync_que_deconstruct(&q);
+    sync_que_destruct(&q);
 }
 
 #undef for_loop

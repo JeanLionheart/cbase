@@ -2,6 +2,7 @@
     "files.associations": {
         "random": "c",
         "net.h": "c",
-        "executor.h": "c"
+        "executor.h": "c",
+        "mem.h": "c"
     }
 }

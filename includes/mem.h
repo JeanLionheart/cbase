@@ -15,7 +15,7 @@ void* m_alloc(mem_t* m, int size);
 
 void m_dealloc(mem_t* m, void* mem);
 
-void mem_decons(mem_t* m);
+void mem_des(mem_t* m);
 
 void* malc(int size);
 

@@ -211,7 +211,7 @@ void memarr_deconstruct(mem_array_t* ma)
     for (int i = 0; i < array_size(&ma->par_array); i++) {
         mempar_deconstruct(&data[i]);
     }
-    array_deconstruct(&ma->par_array);
+    array_destruct(&ma->par_array);
 }
 
 /* for debug */
@@ -297,7 +297,7 @@ void* m_alloc(mem_t* m, int size);
 
 void m_dealloc(mem_t* m, void* mem);
 
-void mem_decons(mem_t* m);
+void mem_des(mem_t* m);
 
 mem_t mem_cons()
 {
@@ -320,7 +320,7 @@ void m_dealloc(mem_t* m, void* mem)
     return memshell_dealloc(s, mem);
 }
 
-void mem_decons(mem_t* m)
+void mem_des(mem_t* m)
 {
     mem_shell_t* s;
     s = (mem_shell_t*)m->m_shell;

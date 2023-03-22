@@ -30,7 +30,7 @@ void list_node_get_value(const list_t *l,const void *node, void *dst);
 
 void list_node_erase(list_t *l, void *node);
 
-void list_deconstruct(list_t *l);
+void list_destruct(list_t *l);
 
 int list_empty(const list_t *l);
 
